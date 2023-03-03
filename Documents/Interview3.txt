@@ -1,0 +1,20 @@
+Hello my name is Georgi I just go from 22 years old and my colleague and I are doing research for developing an app for finding medical help and I want to ask you a couple of questions.
+Are you OK with being recorded?
+- Yeah I'm OK with that.
+Can you introduce yourself and tell me a little bit more about yourself yes?
+-So my name is Jair Pietersz and I'm doing smart mobile. I've been living here about 2 years already.
+Are you from the Netherlands or are you an abroad student?
+- I'm an abroad student I come from Curracao.
+OK and how often do you experiencing convenience when trying to get in touch with a doctor and what is the inconvenience itself?
+- Don't go to the doctor as often but when I try it it's mostly that they wantme to get tested or do something else before coming there so they're not like really open to take you immediately.
+OK and how do you know which doctor? 
+- That's a good question I think the the thing is to ask for your details and then Search the doctor by your name or looking at.
+How do you think these problems can be managed?
+- Maybe if we had like a more personal contact with our doctor for example a phone number or maybe an app that connect you to immediately to your doctor. 
+Because we're planning on making a doctor-on-demand application where you can enter your location so for example Eindhoven, Noord-Brabant so you can see there will be categories for what kind of doctor are you looking for
+and therefore for each category there will be all the doctorswith their profile, with rating, info and you can make an appointment .That's what we were trying and do you think this could would be a helpful improvement for
+your connection with the doctors for example when you need one?
+- Yeah, I think it would be nice And of course it also tells you which doctor you need.
+Then do you have any other suggestions toward us?
+- No, I don't think so, what I have heard seems enough.
+OK thank you very much that was very helpful and wish you a good day.
