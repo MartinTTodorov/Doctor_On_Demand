@@ -1,5 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
+
+
 //See if the browser supports Service Workers, if so try to register one
 if("serviceWorker" in navigator){
   navigator.serviceWorker.register("service-worker.js").then(function(registering){
@@ -13,6 +15,8 @@ if("serviceWorker" in navigator){
   //The registration of the service worker failed
   console.log("Browser: I don't support Service Workers :(");
 }
+
+
 function App() {
   return (
     <div className="App">
