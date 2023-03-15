@@ -1,39 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
-
-
-//See if the browser supports Service Workers, if so try to register one
-if("serviceWorker" in navigator){
-  navigator.serviceWorker.register("service-worker.js").then(function(registering){
-    // Registration was successful
-    console.log("Browser: Service Worker registration is successful with the scope",registering.scope);
-  }).catch(function(error){
-    //The registration of the service worker failed
-    console.log("Browser: Service Worker registration failed with the error",error);
-  });
-} else {
-  //The registration of the service worker failed
-  console.log("Browser: I don't support Service Workers :(");
-}
+import React from "react";
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Navbar from "./components/NavBar";
+import MainPage from "./pages/MainPage";
+import DoctorInfoPage from "./pages/DoctorInfoPage";
 
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <BrowserRouter>
+      <Navbar/>
+      <Routes>
+        <Route path='/' element={<MainPage/>}/>
+        <Route path='/doctors/:doctorID'element={<DoctorInfoPage/>}/>
+      </Routes>
+      </BrowserRouter>
     </div>
   );
 }
