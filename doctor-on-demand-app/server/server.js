@@ -52,4 +52,16 @@ app.get("/api", async(req,res) => {
 
 
 
+
+
+
+app.get("/api/:id", async(req,res) => {
+  const id = req.params.id;
+  const doc = await Doctor.findById(id);
+  res.send(doc);
+
+})
+
+
+
 app.listen(5000, () =>{console.log("Server started on port 5000")})

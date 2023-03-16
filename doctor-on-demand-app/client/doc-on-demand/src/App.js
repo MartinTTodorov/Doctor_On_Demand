@@ -1,26 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
-import React , {useState, useEffect} from 'react';
-import axios from 'axios'
+import React from "react";
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Navbar from "./components/NavBar";
+import MainPage from "./pages/MainPage";
+import DoctorInfoPage from "./pages/DoctorInfoPage";
+
 
 function App() {
 
-  const [backendData, setBackEndData] = useState([]);
- async function fetchData(){axios.get("http://localhost:5000/api").then(
-     
-    ).then(
-      res => {
-        console.log(res.data)
-        setBackEndData(res.data);
-      }
-    )}
-  useEffect(()=>{
-    
-    fetchData();
-  }, [])
+
   return (
-    <div className="App">
-      
+    <div>
+      <BrowserRouter>
+      <Navbar/>
+      <Routes>
+        <Route path='/' element={<MainPage/>}/>
+        <Route path='/doctors/:doctorID'element={<DoctorInfoPage/>}/>
+      </Routes>
+      </BrowserRouter>
     </div>
   );
 }
