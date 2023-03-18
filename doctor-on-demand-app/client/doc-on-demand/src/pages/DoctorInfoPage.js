@@ -39,9 +39,9 @@ export default function DoctorInfoPage() {
       </div>
     </div>
     <div className="Info">
-      <p className="description"><span className="label">Description:</span> asdas {doctorData.description}</p>
-      <p className="walkInHours"><span className="label">Walk-in hours:</span> asdasdasda{doctorData.walkinhours}</p>
-      <p className="phone"><span className="label">Phone:</span> asdasdasdasdasdasdasdasdas{doctorData.phone}</p>
+      <p className="description"><span className="label">Description:</span> {doctorData.description}</p>
+      <p className="walkInHours"><span className="label">Walk-in hours:</span> {doctorData.walkinhours}</p>
+      <p className="phone"><span className="label">Phone:</span> {doctorData.phone}</p>
     </div>
     </div>
   );
